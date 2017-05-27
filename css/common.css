@@ -1,0 +1,63 @@
+*{margin: 0;border: 0; padding: 0;}
+			a{text-decoration: none;}
+			li{list-style: none;}
+			header{height: 50px; background-color: #42B983;}
+			.maincont{width: 100%;height: auto;vertical-align: middle;}
+			.maintitle{color: #353535; display: block; text-align: center; width: 100%; 
+			font-family: "microsoft yahei" ,sans-serif; line-height: 70px; }
+			.maintable,.tabbody,.tabbody ul{width: 100%; }
+			.maintable>div{padding:0 20px; box-sizing: border-box;}
+			.tabhead{width: 100%;height: 50px;background-color: #575757;}
+			.tabhead div{float: left; text-align: center; line-height: 50px; color: #f2f2f2;}
+			.tab-1{width: 45%;}
+			.tab-2,.tab-3,.tab-4{flex-grow: 1;}
+			.tab-5{width: 10%;}
+		    .tabbody ul li{width: 100%; display: flex; height: 100px; border-bottom: 1px #575757 solid; padding: 20px 0;}
+			.tabbody ul li .tab-1>div{float: left; height: 100%;}
+			.tabbody ul li>div{height: 100%; float: left;}
+			.item-check{width: 60px;}
+			.item-pic{width: 140px;  text-align: center;}
+			.item-pic img{height: 100%;}
+			.item-name{width: auto; padding-left: 10px; font-size: 16px; line-height: 30px;}
+			.item-prise, .item-prise-t{width: 100%; height: 100%; text-align: center; line-height: 100px; font-size: 18px;}
+			.item-prise-t{color: #e02;}
+			 .quantity{width: 126px; height: 30px; position: relative; margin: 40px auto 0; box-sizing: border-box;}
+			 .quantity a{display: block; float: left; height: 100%; width: 30px; border: 1px #575757 solid; 
+			 text-align: center; line-height: 28px; font-size: 20px; color: #f02; }
+			 .quantity input{width: 60px; height: 100%; font-size: 18px;  line-height: 28px; float: left; 
+			 text-align: center;  border: #575757 solid; border-width: 1px 0 1px 0;}
+			 .item-stock{width: 100%; text-align: center;}
+			 .select-self{clear: both; height: 35px;}
+			 
+			 .a-check{width: 16px;height: 16px; border: 3px #fff solid; border-radius: 50%; margin: 33px 16px; 
+			 display: block; box-shadow:0 0 0 3px #898989; box-sizing: border-box;}
+			 .a-check.a-checked{padding: 3px; background: #EE7A23; }
+			 .tabfoot{height: 70px; }
+			 
+			 .tabfoot>.check-all{width:110px;line-height: 70px; float: left; height: 100%;cursor: pointer;}
+			 .tabfoot>.check-all>.a-check{margin: 20px 16px; float: left;}
+			 .check-all span{ color: #E02614;} 
+			 .tabfoot>.del-all{width: 60px; line-height: 70px;float: left; margin-left: 5px; cursor: pointer; 
+			 text-align: center;}
+		    .foot-right{height: 100%; float: right; width: 350px;}
+		    .item-total{line-height: 70px;}
+		    .btn{width: 200px; height: 50px; display: block; float: left; line-height: 50px;text-align: center;
+		    font-size: 18px; margin-top: 10px; border: 1px #E02614 solid; background: #fff;}
+		    .btn-red{background: #E02614; color: #fff; }
+		    .foot-right>.btn{float: right;}
+		    .item-total{float: left; font-size: 20px; color: #E02614;}
+		    .md-modal{width: 500px; height: 250px; position: fixed; left: 50%; top: 50%; margin: -125px 0 0 -250px; 
+		    background: #fff; z-index: 20; display: none;}
+		    .md-modal>p{color: #575757; font-size: 18px; line-height: 25px; margin: 40px 0; text-align: center;
+		    }
+		    .md-show{display: block !important;}
+		    .btn-box{width: 100%; padding:30px; box-sizing: border-box; }
+		    
+		    .btn-box>.btn{transition: all 1s; -webkit-transition:all .6s ; color: #E02614;}
+		    .btn-box>.btn-red{float: right; color: #fff;}
+		    .btn-box>.btn:hover{background-color:#E02614 ;color: #fff;}
+		    .md-overlay{width: 100%; height: 100%; position: fixed; background: #000000; opacity: .3; z-index: 10; top: 0;
+		    }
+
+            .del-box{width: 30px; height: 30px; font-size: 24px; text-align: center; line-height: 30px; margin: 40px auto;
+            display: block;}

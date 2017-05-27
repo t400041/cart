@@ -1,0 +1,35 @@
+{
+  "status":1,
+  "result":{
+    "totalMoney":59,
+    "list":[
+      {
+        "productId":"600100002115",
+        "productName":"Stellaris豪华版",
+        "productPrice":120,
+        "productQuentity":1,
+        "productImage":"img/st.png",
+        "parts":[
+          {
+            "partsId":"10001",
+            "partsName":"打火机"
+          }
+        ]
+      },
+      {
+        "productId":"600100002120",
+        "productName":"Tyranny基础版",
+        "productPrice":68,
+        "productQuentity":2,
+        "productImage":"img/ty.png",
+        "parts":[
+          {
+            "partsId":"20001",
+            "partsName":"吸管"
+          }
+        ]
+      }
+    ]
+  },
+  "message":""
+}
