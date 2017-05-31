@@ -51,6 +51,7 @@ new Vue({
 			this.calcTotalMoney();
 			this.isCheckAll();
 		},
+	 
 		isCheckAll: function () {
 			let flag = true;
 			this.productList.forEach(function (item) {

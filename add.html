@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/common.css" />
-</head>
-<body>
-    <body>
-        <div id="add">
-            <header v-text="head"></header>
-        </div>
-    </body>
-</body>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>XX商城-地址选择</title>
+		<link rel="stylesheet" href="css/common.css" />
+	</head>
+
+	<body>
+		<div id="add">
+			<header v-text="head"></header>
+			<div class="maincont">
+				<h2 class="maintitle">配送地址</h2>
+				<div class="addbox">
+					<ul>
+						<li class="add-list" v-for="(item,index) in showList" v-bind:class="{'select':item.isDefault}">
+							<p class="add-type" v-text="item.addName"></p>
+							<div class="add-detail">
+								<div>
+									<span class="p-gray">收货人：</span><span v-text="item.userName"></span>
+								</div>
+								<div>
+									<span class="p-gray">所在地区：</span><span v-text="item.areaName"></span>
+								</div>
+								<div>
+									<span class="p-gray">地址：</span><span v-text="item.streetName"></span>
+								</div>
+								<div>
+									<span class="p-gray">电子邮箱：</span><span v-text="item.email"></span>
+								</div>
+								<div>
+									<span class="p-gray">手机：</span><span v-text="item.tel"></span>
+								</div>
+							</div>
+							<div class="a-bottom">
+								<a class="a-defult" href="javascript:;" v-on:click="setDefault(item.addressId)" v-if="!item.isDefault">设为默认</a>
+								<p v-if="item.isDefault">默认地址</p>
+							</div>
+							
+						</li>
+					</ul>
+					<div class="open" v-on:click="loadMore()" v-if="!loadMores">展开</div>
+					<div class="open" v-on:click="close()" v-if="loadMores">收起</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+		<script src="https://unpkg.com/vue-resource/dist/vue-resource.js"></script>
+		<script src="js/add.js"></script>
+	</body>
+
 </html>

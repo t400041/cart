@@ -1,0 +1,36 @@
+{
+  "status":2,
+  "message":"",
+  "result":[
+    {
+      "addressId":"100001",
+      "addName":"家庭",
+      "userName":"唐叔叔",
+      "areaName":"重庆市九龙坡区",
+      "streetName":"XX路XX号",
+      "email":"XXX@XXX.com",
+      "tel":"12345678901",
+      "isDefault":true
+    },
+    {
+      "addressId":"100002",
+      "addName":"公司",
+      "userName":"唐叔叔",
+      "areaName":"重庆市沙坪坝区",
+      "streetName":"XX路XX号",
+      "email":"XXX@XXX.com",
+      "tel":"12345678901",
+      "isDefault":false
+    },
+    {
+      "addressId":"100003",
+      "addName":"学校",
+      "userName":"唐哥哥",
+      "areaName":"重庆市渝中区",
+      "streetName":"XXX@XXX.com",
+      "email":"100001",
+      "tel":"12345678901",
+      "isDefault":false
+    }
+  ]
+}
